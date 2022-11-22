@@ -2,3 +2,207 @@
 @import 'global';
 @import 'fonts';
 
+.header {
+    margin-top: 44px;
+
+    &__wrapper {
+        height: 44px;
+        display: flex;
+        width: 100%;
+        justify-content:space-between;
+        align-items: center;
+    }
+
+    // .header__logo
+
+    &__logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo{
+        margin-right: 28px;
+    }
+    .themes{
+        width: 56px;
+        height: 27px;
+        position: relative;
+        cursor: pointer;
+        border-radius: 14px;
+        background-color: #FCFCFC;
+        border: 1px solid #EBECEE;
+        padding: 3.5px 4.5px;
+        display: flex;
+        justify-content: space-between;
+        &__switch{
+            position: absolute;
+            top: 4px;
+            right: 5px;
+            width: 18px;
+            height: 18px;
+            background: #FBE8CB;
+            border: 2px solid #FBB955;
+            border-radius: 50%;
+        }
+    }
+
+    // .header__nav
+
+    &__nav {
+        
+    }
+
+    // .header__list
+
+    &__list {
+        display: flex;
+    }
+
+    // .header__list-item
+
+    &__list-item {
+        margin-right: 60px;
+        padding: 4.5px 10px;
+    }
+    &__list-item:last-child {
+        margin-right: 0px;
+    }
+    &__list-item a{
+        color: $clr-text-secondary;
+    }
+    &__list-item:hover a{
+        color: $clr-menu-hover;
+    }
+    &__list-item_active {
+        a {
+            color: $primary-clr-dark;
+        }
+        border-bottom: 2px solid $primary-accent;
+        border-bottom-left-radius: 1px;
+        border-bottom-right-radius: 1px;
+    }
+    // .header__buttons
+
+    &__buttons {
+        display: flex;
+    }
+
+    // .header__dropdown
+
+    &__dropdown {
+        position: relative;
+        margin-right: 13px;
+    }
+    &__dropdown::before{
+        content: '';
+        position: absolute;
+        right: 15px;
+        top: 20px;
+        width: 15px;
+        height: 10px;
+        background: url('../images/arrow.svg') no-repeat;
+        z-index: 2;
+    }
+    // .header__dropdown-list
+    
+    &__dropdown-list {
+        cursor: pointer;
+        background-color: $clr-dropdown-light;
+        width: 152px;
+        height: 44px;
+        border-radius: 14px;
+        color: $clr-text-secondary;
+        padding: 0 12px;
+        appearance: none;
+    }
+
+
+    // .header__dropdown-list-item
+
+    &__dropdown-list-item {
+        background-color: $clr-btn-foreground;
+        width: 100%;
+        color: $clr-text-secondary;
+    }
+    &__dropdown-list-item::before {
+
+    }
+
+    // .header__button
+
+    &__button {
+    }
+}
+
+.themes {
+
+    // .themes__light
+
+    &__light {
+    }
+
+    // .themes__dark
+
+    &__dark {
+    }
+
+    // .themes__switch
+
+    &__switch {
+    }
+}
+
+.form {
+
+    // .form__inner
+
+    &__inner {
+    }
+
+    // .form__title
+
+    &__title {
+    }
+
+    // .form__input-text
+
+    &__input-text {
+    }
+
+    // .form__button
+
+    &__button {
+    }
+
+    // .form__parameters
+
+    &__parameters {
+    }
+
+    // .form__line
+
+    &__line {
+    }
+
+    // .form__address
+
+    &__address {
+    }
+}
+.footer {
+
+    // .footer__links
+
+    &__links {
+    }
+
+    // .footer__link
+
+    &__link {
+    }
+
+    // .footer__copy
+
+    &__copy {
+    }
+}
