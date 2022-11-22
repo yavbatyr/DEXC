@@ -32,7 +32,7 @@
                         <li class="header__list-item"><a href="#!">
                                 Launchpad
                             </a></li>
-                        <li class="header__list-item"><a href="#!">
+                        <li class="header__list-item header__list-item_active"><a href="#!">
                                 Parking
                             </a></li>
                         <li class="header__list-item"><a href="#!">
@@ -43,9 +43,9 @@
                 <div class="header__buttons">
                     <div class="header__dropdown">
                         <select class="header__dropdown-list">
-                            <option class="header__dropdown-list-item"><a href="">BSC</a></option>
-                            <option class="header__dropdown-list-item"><a href="">ETH</a></option>
-                            <option class="header__dropdown-list-item"><a href="">MATIC</a></option>
+                            <option class="header__dropdown-list-item">BSC</option>
+                            <option class="header__dropdown-list-item">ETH</option>
+                            <option class="header__dropdown-list-item">MATIC</option>
                         </select>
                     </div>
                     <button class="header__button btn">Connect wallet</button>
@@ -56,11 +56,13 @@
     <main class="main">
         <div class="container">
             <div class="form">
-                <form action="input-deposit" class="form__inner">
-                    <fieldset>
+                <form action="input-deposit" class="form__wrapper">
+                    <fieldset class="form__inner">
                         <legend class="form__title">Deposit</legend>
-                        <input class="form__input-text" type="text" name="input">
-                        <button class="form__button btn">Connect wallet</button>
+                        <input class="form__input-text" type="text" name="input" placeholder="Enter amount">
+                        <button class="form__button btn"><img class="form__button-icon"
+                                src="images/connectwalleticon.svg" alt="">Connect
+                            wallet</button>
                         <p class="form__parameters">
                             <span>Parking:</span>
                             <span>0 BNB</span>
@@ -79,19 +81,9 @@
                         </p>
                         <hr class="form__line">
                         <div class="form__address">
-                            <p>Contract:</p>
-                            <p>0x5eC381e5f70805762208a26DFF3036f68990b604</p>
-                        </div>
-                    </fieldset>
-                </form>
-                <form action="input-withdraw">
-                    <fieldset>
-                        <legend>Withdraw</legend>
-                        <input class="form__input-text" type="text" name="input">
-                        <button class="form__button btn">Withdraw</button>
-                        <div class="form__address">
-                            <p>Contract:</p>
-                            <p>0x5eC381e5f70805762208a26DFF3036f68990b604</p>
+                            <p class="form__address-title">Contract:</p>
+                            <p class="form__address-wallet">0x5eC381e5f70805762208a26DFF3036f68990b604</p>
+                            <button class="form__address-copy"><img src="images/copy_icon.svg" alt=""></button>
                         </div>
                     </fieldset>
                 </form>
@@ -99,15 +91,15 @@
         </div>
     </main>
     <footer class="footer">
-        <DIV class="container">
+        <div class="container">
             <div class="footer__links">
-                <a class="footer__link" href="">WhitePaper</a>
-                <a class="footer__link" href="">Risk Policy</a>
-                <a class="footer__link" href="">Support</a>
+                <a class="footer__link" href="">WhitePaper |</a>
+                <a class="footer__link" href="">Risk Policy |</a>
+                <a class="footer__link" href="">Support |</a>
                 <a class="footer__link" href="">Listing</a>
             </div>
             <p class="footer__copy">Created by Lama Group inc. 2022</p>
-        </DIV>
+        </div>
     </footer>
     <script src="js/main.min.js"></script>
 </body>

@@ -5,9 +5,10 @@
 }
 
 body{
-    background: $primary-clr-light;
+    background: $clr-bg-light;
     font-family: 'Source Sans Pro';
     font-weight: 400;
+    font-size: 16px;
 }
 
 // .title{
@@ -29,6 +30,10 @@ body{
     color: $clr-btn-foreground;
     background: $clr-btn-background;
     border-radius: 14px;
+    transition: .3s;
+}
+.btn:hover{
+    background: $clr-btn-background-hover;
 }
 
 
