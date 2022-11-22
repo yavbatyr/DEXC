@@ -43,7 +43,17 @@
             background: #FBE8CB;
             border: 2px solid #FBB955;
             border-radius: 50%;
+            transition: .3s;
+            &_active{
+                left: 5px;
+                background: #99C1E7;
+                border: 2px solid #BCD6EE;
+            }
         }
+    }
+    .themes_active{
+        background-color: $clr-input-dark;
+        border: 1px solid #475264;
     }
 
     // .header__nav
@@ -124,31 +134,10 @@
         width: 100%;
         color: $clr-text-secondary;
     }
-    &__dropdown-list-item::before {
-
-    }
 
     // .header__button
 
     &__button {
-    }
-}
-
-.themes {
-
-    // .themes__light
-
-    &__light {
-    }
-
-    // .themes__dark
-
-    &__dark {
-    }
-
-    // .themes__switch
-
-    &__switch {
     }
 }
 
@@ -260,7 +249,7 @@
 .footer {
     text-align: center;
     font-size: 13px;
-line-height: 26px;
+    line-height: 26px;
     // .footer__links    
     &__links {
     }
