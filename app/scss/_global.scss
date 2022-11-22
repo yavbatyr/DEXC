@@ -1,8 +1,14 @@
-// .container{
-//     max-width: ;
-//     width: 100%;
-//     margin: 0 auto;
-// }
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body{
+    background: $primary-clr-light;
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+}
 
 // .title{
 //     font-size: ;
@@ -18,9 +24,12 @@
 //     color: ;
 // }
 
-// .btn{
-
-// }
+.btn{
+    padding: 12px 30px;
+    color: $clr-btn-foreground;
+    background: $clr-btn-background;
+    border-radius: 14px;
+}
 
 
 
