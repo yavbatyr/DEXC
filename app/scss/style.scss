@@ -163,10 +163,9 @@
             padding-right: 10px;
         }
     }
-    &__wrapper[action="input-parking-connected"]{
-        display: none;
-    }
-    &__wrapper[action="input-launchpad-connected"]{
+    &__wrapper[action="input-parking-connected"],
+    &__wrapper[action="input-launchpad-connected"],
+    &__wrapper[action="input-partners-connected"]{
         display: none;
     }
     &__inner {
@@ -186,7 +185,12 @@
     }
 
     // .form__input-text
-
+    &__input-copy{
+        position: absolute;
+        top: 22.5px;
+        right: 15px;
+        background-color: transparent;
+    }
     &__input-text {
         font-weight: 600;
         font-size: 24px;
