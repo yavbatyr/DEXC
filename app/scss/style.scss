@@ -228,7 +228,14 @@
 }
 .form {
     margin-bottom: 35px;
-    // .form__inner
+    &-parking,
+    &-launchpad,
+    &-partners{
+        display: none;
+    }
+    &_active{
+        display: block;
+    }
     &__wrapper,
     &__disclaimer {
         margin: 0 auto;

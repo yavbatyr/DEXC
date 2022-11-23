@@ -29,13 +29,13 @@
                 </div>
                 <nav class="header__nav">
                     <ul class="header__list">
-                        <li class="header__list-item"><a href="#!">
+                        <li class="header__list-item" data-id="2"><a href="#!">
                                 Launchpad
                             </a></li>
-                        <li class="header__list-item header__list-item_active"><a href="#!">
+                        <li class="header__list-item header__list-item_active" data-id="1"><a href="#!">
                                 Parking
                             </a></li>
-                        <li class="header__list-item"><a href="#!">
+                        <li class="header__list-item" data-id="3"><a href="#!">
                                 Partners
                             </a></li>
                     </ul>
@@ -57,7 +57,7 @@
     </header>
     <main class="main">
         <div class="container">
-            <div class="form">
+            <div class="form form-parking form_active" data-content="1">
                 <form action="input-parking" class="form__wrapper">
                     <fieldset class="form__inner">
                         <legend class="form__title">Deposit</legend>
@@ -107,7 +107,7 @@
                     </fieldset>
                 </form>
             </div>
-            <div class="form">
+            <div class="form form-launchpad" data-content="2">
                 <div class="form__disclaimer">
                     <img src="images/disclaimer.svg" alt="disclaimer" class="form__disclaimer-icon">
                     <p class="form__disclaimer-text">
@@ -163,7 +163,7 @@
                     </fieldset>
                 </form>
             </div>
-            <div class="form">
+            <div class="form form-partners" data-content="3">
                 <form action="input-partners" class="form__wrapper">
                     <fieldset class="form__inner">
                         <legend class="form__title">

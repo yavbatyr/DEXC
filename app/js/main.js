@@ -1,8 +1,13 @@
 $(function(){
-    $('.header__list-item').on('click', function(){
-    $('.header__list-item').removeClass('header__list-item_active');
-    $(this).addClass('header__list-item_active');
-    })
+    $('.header__list-item').on('click', function (e) { 
+        e.preventDefault();
+        const id = $(this).attr('data-id');
+    
+        $(".header__list-item").removeClass("header__list-item_active");    
+        $(".form").removeClass("form_active");
+        $(`.header__list-item[data-id='${id}']`).addClass("header__list-item_active");    
+        $(`.form[data-content='${id}']`).addClass("form_active");
+    });
 
     $('.themes').on('click', function(){
         $('.themes').toggleClass('themes_active');
