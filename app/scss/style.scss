@@ -163,7 +163,10 @@
             padding-right: 10px;
         }
     }
-    &__wrapper[action="input-withdraw"]{
+    &__wrapper[action="input-parking-connected"]{
+        display: none;
+    }
+    &__wrapper[action="input-launchpad-connected"]{
         display: none;
     }
     &__inner {
@@ -219,6 +222,12 @@
             padding-top: 2px;
             margin-right: 10px;
         }
+    }
+    &__button:disabled{
+        color: rgba($color: #fff, $alpha: 0.5);
+    }
+    &__button:disabled:hover{
+        background-color: $primary-accent;
     }
 
     // .form__parameters

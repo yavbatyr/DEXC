@@ -56,7 +56,7 @@
     <main class="main">
         <div class="container">
             <div class="form">
-                <form action="input-deposit" class="form__wrapper">
+                <form action="input-parking" class="form__wrapper">
                     <fieldset class="form__inner">
                         <legend class="form__title">Deposit</legend>
                         <input class="form__input-text" type="text" name="input" placeholder="Enter amount">
@@ -88,7 +88,7 @@
                         </div>
                     </fieldset>
                 </form>
-                <form action="input-withdraw" class="form__wrapper">
+                <form action="input-parking-connected" class="form__wrapper">
                     <fieldset class="form__inner">
                         <legend class="form__title">Withdraw</legend>
                         <input class="form__input-text" type="text" name="input" placeholder="Enter amount">
@@ -142,13 +142,15 @@
                         </div>
                     </fieldset>
                 </form>
-                <form action="input-withdraw" class="form__wrapper">
+                <form action="input-launchpad-connected" class="form__wrapper">
                     <fieldset class="form__inner">
-                        <legend class="form__title">Withdraw</legend>
-                        <input class="form__input-text" type="text" name="input" placeholder="Enter amount">
-                        <button class="form__button btn">
-                            <img class="form__button-icon" src="images/connectwalleticon.svg" alt="">
-                            Withdraw
+                        <input class="form__input-text" type="text" name="input" placeholder="Address token">
+                        <button class="launchpad-connected form__button btn" disabled>
+                            Load token
+                        </button>
+                        <input class="form__input-text" type="text" name="input" placeholder="Address token">
+                        <button class="launchpad-connected form__button btn" disabled>
+                            Purchase
                         </button>
                         <div class="form__address">
                             <p class="form__address-title">Contract:</p>
