@@ -140,22 +140,36 @@
     &__button {
     }
 }
-
 .form {
     margin-bottom: 35px;
     // .form__inner
-
-    &__wrapper {
+    &__wrapper,
+    &__disclaimer {
         margin: 0 auto;
         max-width: 375px;
-        min-height: 400px;
         background: $primary-clr-light;
         border-radius: 14px;
+    }
+    &__wrapper{
         padding: 25px;
+        margin-bottom: 34px;
+    }
+    &__disclaimer{
+        display: flex;
+        align-items: center;
+        padding: 18px;
+        margin-bottom: 20px;
+        &-icon{
+            padding-right: 10px;
+        }
+    }
+    &__wrapper[action="input-withdraw"]{
+        display: none;
     }
     &__inner {
         display: flex;
         flex-direction: column;
+        position: relative;
     }
 
     // .form__title
@@ -183,6 +197,13 @@
     }
     &__input-text::placeholder{
         opacity: .3;
+    }
+    &__input-text-icon{
+        position: absolute;
+        top: 23px;
+        right: 23px;
+        width: 20px;
+        height: 20px;
     }
 
 

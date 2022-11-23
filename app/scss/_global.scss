@@ -9,6 +9,7 @@ body{
     font-family: 'Source Sans Pro';
     font-weight: 400;
     font-size: 16px;
+    // overflow-y: hidden;
 }
 
 // .title{
@@ -31,6 +32,7 @@ body{
     background: $clr-btn-background;
     border-radius: 14px;
     transition: .3s;
+    font-weight: 600;
 }
 .btn:hover{
     background: $clr-btn-background-hover;
