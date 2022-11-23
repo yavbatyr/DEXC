@@ -103,18 +103,19 @@
         position: relative;
         margin-right: 13px;
     }
-    &__dropdown::before{
+    .new-select::before{
         content: '';
+        display: block;
+        width: 25px;
+        height: 25px;
         position: absolute;
-        right: 15px;
-        top: 20px;
-        width: 15px;
-        height: 10px;
-        background: url('../images/arrow.svg') no-repeat;
-        z-index: 2;
+        left: 12.5px;
+        top: 12px;
+        
     }
-    // .header__dropdown-list
-    
+    .new-select::before{
+        background: url('../images/BSC.svg') no-repeat;
+    }
     &__dropdown-list {
         cursor: pointer;
         background-color: $clr-dropdown-light;
@@ -122,8 +123,93 @@
         height: 44px;
         border-radius: 14px;
         color: $clr-text-secondary;
-        padding: 0 12px;
+        // padding: 0 12px;
         appearance: none;
+        
+        .new-select {
+            border-radius: 14px;
+            position: relative;
+            height: 100%;
+            // border: 1px solid #ced4da;
+            padding: 12.5px 37px;
+            cursor: pointer;
+            user-select: none;
+        }
+        
+        .new-select__list {
+            border-radius: 14px;
+            position: absolute;
+            top: 55px;
+            left: 0;
+            // border: 1px solid #ced4da;
+            cursor: pointer;
+            width: 100%;
+            z-index: 2;
+            background: $clr-dropdown-light;
+            user-select: none;
+        }
+        
+        .new-select__list.on {
+            display: block;
+        }
+        
+        .new-select__item span {
+            display: block;
+            padding: 10px 37px;
+        }
+        .new-select__item span::before{
+            content: '';
+            display: block;
+            width: 25px;
+            height: 25px;
+            position: absolute;
+        }
+        .new-select__item[data-value="BSC"] span::before{
+            left: 12px;
+            top: 9px;
+            background: url('../images/BSC.svg') no-repeat;
+        }
+        .new-select__item[data-value="ETH"] span::before{
+            left: 12px;
+            top: 45px;
+            background: url('../images/ETH.svg') no-repeat;
+        }
+        .new-select__item[data-value="MATIC"] span::before{
+            left: 12px;
+            bottom: 2px;
+            background: url('../images/MATIC.svg') no-repeat;
+        }
+        
+        .new-select__item span:hover {
+            color: $primary-accent;
+        }
+        
+        .new-select:after {
+            content: '';
+            display: block;
+            width: 14px;
+            height: 7px;
+            position: absolute;
+            right: 18px;
+            top: 18px;
+            background: url('../images/arrow.svg') no-repeat;
+
+            // -webkit-transition: all .27s ease-in-out;
+            // -o-transition: all .27s ease-in-out;
+            transition: all .27s ease-in-out;
+    
+            // -webkit-transform: rotate(0deg);
+            // -ms-transform: rotate(0deg);
+            // -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        
+        .new-select.on:after {
+            // -webkit-transform: rotate(180deg);
+            // -ms-transform: rotate(180deg);
+            // -o-transform: rotate(180deg);
+                transform: rotate(180deg);
+        }
     }
 
 
