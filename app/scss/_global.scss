@@ -3,13 +3,16 @@
     width: 100%;
     margin: 0 auto;
 }
-
+*{
+    transition: .3s;
+}
 body{
     background: $clr-bg-light;
     font-family: 'Source Sans Pro';
     font-weight: 400;
     font-size: 16px;
     height: auto;
+    transition: .3s;
 }
 
 // .title{

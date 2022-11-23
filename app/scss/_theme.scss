@@ -1,0 +1,21 @@
+.body_dark-theme{
+    background: $clr-bg-dark;
+}
+.form__wrapper_dark-theme,
+.form__disclaimer_dark-theme{
+    background: $primary-clr-dark !important;
+}
+.form__input-text_dark-theme{
+    background: $clr-input-dark !important;
+    color: $clr-text-light !important;
+}
+.header__list-item_active.light-text a{
+    color: $clr-text-light;
+}
+.light-text{
+    color: $clr-text-light !important;
+}
+.new-select_dark-theme,
+.new-select__list_dark-theme{
+    background: $primary-clr-dark !important;
+}

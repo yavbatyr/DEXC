@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'global';
 @import 'fonts';
+@import 'theme';
 
 .header {
     margin-top: 44px;
@@ -73,6 +74,7 @@
     &__list-item {
         margin-right: 60px;
         padding: 4.5px 10px;
+        transition: 0s;
     }
     &__list-item:last-child {
         margin-right: 0px;
@@ -121,7 +123,7 @@
         background-color: $clr-dropdown-light;
         width: 152px;
         height: 44px;
-        border-radius: 14px;
+        border-radius: 18px;
         color: $clr-text-secondary;
         // padding: 0 12px;
         appearance: none;
@@ -137,6 +139,7 @@
         }
         
         .new-select__list {
+            transition: 0s;
             border-radius: 14px;
             position: absolute;
             top: 55px;
